@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+
+    <style>
+      #chart_wrap {
+        position: relative;
+        padding-bottom: 100%;
+        height: 0;
+        overflow: hidden;
+      }
+
+      .chart {
+        width: 100%;
+        min-height: 450px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+      <img
+        src="https://media-exp1.licdn.com/dms/image/C4D0BAQGOGmrHArDDaA/company-logo_100_100/0/1559243213129?e=1620259200&v=beta&t=maX2TLyAXqJQZ1k-GgAyD8__6V8aJ8Aa4HOh859zBAg"
+        alt=""
+        style="width: 50px"
+        srcset=""
+      />
+      <a class="navbar-brand m-2" href="#">Innosoft</a>
+      <button
+        class="navbar-toggler d-lg-none"
+        type="button"
+        data-toggle="collapse"
+        data-target="#collapsibleNavId"
+        aria-controls="collapsibleNavId"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fa fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="dropdownId"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Dropdown</a
+            >
+            <div class="dropdown-menu" aria-labelledby="dropdownId">
+              <a class="dropdown-item" href="#">Action 1</a>
+              <a class="dropdown-item" href="#">Action 2</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="text"
+            placeholder="Search"
+          />
+          <button class="btn btn-outline-light my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 mt-5">
+          <div id="accordianId" role="tablist" aria-multiselectable="true">
+            <div class="card">
+              <div class="card-header" role="tab" id="section1HeaderId">
+                <h5 class="mb-0">
+                  <a
+                    data-toggle="collapse"
+                    data-parent="#accordianId"
+                    href="#section1ContentId"
+                    aria-expanded="true"
+                    aria-controls="section1ContentId"
+                  >
+                    Section 1
+                  </a>
+                </h5>
+              </div>
+              <div
+                id="section1ContentId"
+                class="collapse in"
+                role="tabpanel"
+                aria-labelledby="section1HeaderId"
+              >
+                <div class="card-body">
+                  <div id="piechart_3d" class="chart"></div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" role="tab" id="section2HeaderId">
+                <h5 class="mb-0">
+                  <a
+                    data-toggle="collapse"
+                    data-parent="#accordianId"
+                    href="#section2ContentId"
+                    aria-expanded="true"
+                    aria-controls="section2ContentId"
+                  >
+                    Section 2
+                  </a>
+                </h5>
+              </div>
+              <div
+                id="section2ContentId"
+                class="collapse in"
+                role="tabpanel"
+                aria-labelledby="section2HeaderId"
+              >
+                <div class="card-body">Section 2 content</div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header" role="tab" id="section3HeaderId">
+                <h5 class="mb-0">
+                  <a
+                    data-toggle="collapse"
+                    data-parent="#accordianId"
+                    href="#section3ContentId"
+                    aria-expanded="true"
+                    aria-controls="section2ContentId"
+                  >
+                    Section 3
+                  </a>
+                </h5>
+              </div>
+              <div
+                id="section3ContentId"
+                class="collapse in"
+                role="tabpanel"
+                aria-labelledby="section2HeaderId"
+              >
+                <div class="card-body">Section 3 content</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://www.google.com/jsapi"></script>
+
+    <script type="text/javascript">
+      google.charts.load("current", { packages: ["corechart"] });
+      google.charts.setOnLoadCallback(drawChartLoad);
+
+      function drawChartLoad() {
+        var data = google.visualization.arrayToDataTable([
+          ["Task", "Hours per Day"],
+          ["Work", 11],
+          ["Eat", 2],
+          ["Commute", 2],
+          ["Watch TV", 2],
+          ["Sleep", 7],
+        ]);
+
+        let options = {
+          title: "My Daily Activities",
+          is3D: true,
+          colors: ["#007bff", "#0c56a5", "#4856a9", "#0c1b71", "#69aef9"],
+          width: 1200,
+          height: 640,
+        };
+
+        var chart = new google.visualization.PieChart(
+          document.getElementById("piechart_3d")
+        );
+        chart.draw(data, options);
+      }
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ["Task", "Hours per Day"],
+          ["Work", 11],
+          ["Eat", 2],
+          ["Commute", 2],
+          ["Watch TV", 2],
+          ["Sleep", 7],
+        ]);
+
+        let options = {
+          title: "My Daily Activities",
+          is3D: true,
+          colors: ["#007bff", "#0c56a5", "#4856a9", "#0c1b71", "#69aef9"],
+        };
+
+        var chart = new google.visualization.PieChart(
+          document.getElementById("piechart_3d")
+        );
+        chart.draw(data, options);
+      }
+
+      $(document).ready(function () {
+        $(window).resize(function () {
+          drawChart();
+        });
+      });
+    </script>
+  </body>
+</html>
